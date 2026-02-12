@@ -18,16 +18,19 @@
 <div class="layout">
 
   <!-- ANUNCIO IZQUIERDO -->
-  <script>
-  atOptions = {
-    'key' : '1d2e8be2f2826e4f68ceda6fe5b4e8a8',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {}
-  };
-  </script>
-  <script src="https://www.highperformanceformat.com/1d2e8be2f2826e4f68ceda6fe5b4e8a8/invoke.js"></script>
+  <aside class="sidebar-ad left">
+    <script>
+      atOptions = {
+        'key' : '1d2e8be2f2826e4f68ceda6fe5b4e8a8',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/1d2e8be2f2826e4f68ceda6fe5b4e8a8/invoke.js"></script>
+  </aside>
+
 
   <!-- CONTENIDO CENTRAL -->
   <main class="juego-container fade-up">
@@ -112,6 +115,7 @@ const observer = new IntersectionObserver(entries => {
 });
 document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
 </script>
+
 
 </body>
 </html>
