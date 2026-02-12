@@ -196,3 +196,12 @@ header h1 {
 .no-resultados h2 {
   font-size: 22px;
 }
+
+
+
+.ad-banner {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}

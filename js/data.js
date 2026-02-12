@@ -5,7 +5,7 @@ const juegos = [
         descripcion: "terror, Supervivencia, accion",
         descripcionLarga: "Descargar Resident Evil 4 Remake para PC en Español.",
         imagen: "https://image.api.playstation.com/vulcan/ap/rnd/202210/0712/BiS5QP6h4506JHyJlZlVzK9D.jpg",
-        descarga: "https://playpaste.net/?v=jPif",
+        descarga: "https://exe.io/re4re",
         requisitos: {
         minimo: [
         "Requiere un procesador y un sistema operativo de 64 bits",
@@ -56,7 +56,7 @@ const juegos = [
         descripcion: "Terror psicologico, Supervivencia",
         descripcionLarga: "«Me llamo... Maria», dice la mujer, sonriendo. Su rostro, su voz... Es igual que ella.",
         imagen: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124490/capsule_616x353.jpg?t=1744248682",
-        descarga: "https://playpaste.net/?v=jPjG",
+        descarga: "https://exe.io/e1x6EN",
                 requisitos: {
         minimo: [
         "Requiere un procesador y un sistema operativo de 64 bits",
@@ -108,7 +108,7 @@ const juegos = [
         descripcion: "supervivencia, post apocaliptico",
         descripcionLarga: "Descargar The Last of US Part II Remastered para PC en Español.",
         imagen: "https://assetsio.gnwcdn.com/The-Last-of-Us-Part-II-Remastered.png?width=690&quality=85&format=jpg&dpr=3&auto=webp",
-        descarga: "https://playpaste.net/?v=jPjH",
+        descarga: "https://exe.io/gv5NMIz",
                 requisitos: {
         minimo: [
         "Requiere un procesador y un sistema operativo de 64 bits",
