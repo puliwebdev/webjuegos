@@ -253,3 +253,37 @@ header h1 {
   }
 }
 
+.layout-index {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.catalogo {
+  min-width: 0;
+}
+
+#catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.sidebar-ad.right {
+  position: sticky;
+  top: 110px;
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .layout-index {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-ad.right {
+    margin-top: 20px;
+  }
+}

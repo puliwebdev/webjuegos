@@ -12,22 +12,26 @@
     <input type="text" id="buscador" placeholder="Buscar juego...">
 </header>
 
+<!-- LAYOUT GENERAL -->
+<div class="layout-index">
 
-<main class="catalogo">
-
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="catalogo">
     <div id="catalogo"></div>
+  </main>
 
-    <!-- ANUNCIO -->
-    <div class="ad-banner">
-        <script async="async" data-cfasync="false"
-            src="https://pl28702894.effectivegatecpm.com/e9b88537b08a4fa8771bee4ed59e98c7/invoke.js">
-        </script>
-        <div id="container-e9b88537b08a4fa8771bee4ed59e98c7"></div>
-    </div>
+  <!-- SIDEBAR DERECHA (NATIVE) -->
+  <aside class="sidebar-ad right">
+    <script async data-cfasync="false"
+      src="https://pl28702894.effectivegatecpm.com/e9b88537b08a4fa8771bee4ed59e98c7/invoke.js">
+    </script>
+    <div id="container-e9b88537b08a4fa8771bee4ed59e98c7"></div>
+  </aside>
 
-</main>
+</div>
 
 <script src="js/data.js"></script>
+
 <script>
 const catalogo = document.getElementById("catalogo");
 const buscador = document.getElementById("buscador");
@@ -48,29 +52,18 @@ function mostrarJuegos(filtro = "") {
         return;
     }
 
-    juegosFiltrados.forEach((juego, index) => {
-
-    // 👉 cada 4 juegos mete un banner
-    if (index > 0 && index % 4 === 0) {
+    juegosFiltrados.forEach(juego => {
         catalogo.innerHTML += `
-            <div class="ad-banner">
-                <!-- PEGÁS ACÁ el código de Adsterra -->
+            <div class="card hidden">
+                <img src="${juego.imagen}">
+                <h2>${juego.nombre}</h2>
+                <p>${juego.descripcion}</p>
+                <a href="juego.html?id=${juego.id}" class="boton">
+                    Ver más
+                </a>
             </div>
         `;
-    }
-
-    catalogo.innerHTML += `
-        <div class="card hidden">
-            <img src="${juego.imagen}">
-            <h2>${juego.nombre}</h2>
-            <p>${juego.descripcion}</p>
-            <a href="juego.html?id=${juego.id}" class="boton">
-                Ver más
-            </a>
-        </div>
-    `;
-});
-
+    });
 
     observarCards();
 }
@@ -93,7 +86,6 @@ buscador.addEventListener("input", e => {
 
 mostrarJuegos();
 </script>
-
 
 </body>
 </html>
