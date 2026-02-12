@@ -141,5 +141,47 @@ const juegos = [
         
         ]
         
+    },
+        {
+        id: 4,
+        nombre: "The Last of Us™ Parte I",
+        descripcion: "supervivencia, post apocaliptico",
+        descripcionLarga: "Descargar The Last of US Part I Remastered para PC en Español.",
+        imagen: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/capsule_616x353.jpg?t=1750959031",
+        descarga: "https://playpaste.net/?v=jPjQ",
+                requisitos: {
+        minimo: [
+        "Requiere un procesador y un sistema operativo de 64 bits",
+        "SO: Windows 10 (Version 1909 or Newer)",
+        "PROCESADOR: AMD Ryzen 5 1500X, Intel Core i7-4770K",
+        "MEMORIA: 16 GB de RAM",
+        "GRÁFICOS: AMD Radeon RX 470 (4 GB), AMD Radeon RX 6500 XT (4 GB), NVIDIA GeForce GTX 970 (4 GB), NVIDIA GeForce GTX 1050 Ti (4 GB)",
+        "ALMACENAMIENTO: 100 GB de espacio disponible",
+        "NOTAS ADICIONALES: SSD Recommended",
+        ],
+        recomendado: [
+        "Requiere un procesador y un sistema operativo de 64 bits",
+        "SO: Windows 10 (Version 1909 or Newer)",
+        "PROCESADOR: AMD Ryzen 5 3600X, Intel Core i7-8700",
+        "MEMORIA: 16 GB de RAM",
+        "GRÁFICOS: AMD Radeon RX 5700 XT (8 GB), AMD Radeon RX 6600 XT (8 GB), NVIDIA GeForce RTX 2070 SUPER (8 GB), NVIDIA GeForce RTX 3060 (8 GB)",
+        "ALMACENAMIENTO: 100 GB de espacio disponible",
+        "NOTAS ADICIONALES: SSD Recommended",
+        ]
+        },
+        contenido:`
+        Descargar The Last of Us Juego para PC en Español Deluxe Edition v1.1.2.0
+        Update v1.1.5.0 (Se descarga e instala por separado)
+        Included DLC: Pre-purchase Entitlements, Digital Deluxe Upgrade.
+        `,
+
+        tutoriales: [
+        {
+        titulo: "Cómo instalar el juego",
+        link: "https://playpaste.net/?v=jPjP"
+        },
+        
+        ]
+        
     }
 ];

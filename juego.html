@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Juego</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Juego</title>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
-<script async data-cfasync="false"
-  src="https://pl28702894.effectivegatecpm.com/e9b88537b08a4fa8771bee4ed59e98c7/invoke.js">
-</script>
-<script src="https://pl28703101.effectivegatecpm.com/bd/1e/a9/bd1ea96780b7b58622ede5cdf3d88cbd.js"></script>
 
 <body>
 
+<!-- Popunder -->
+<script src="https://pl28703101.effectivegatecpm.com/bd/1e/a9/bd1ea96780b7b58622ede5cdf3d88cbd.js"></script>
+
+
 <a href="index.html" class="volver">← Volver</a>
 
-<div class="juego-container fade-up">
-  <div id="detalle"></div>
+<div class="layout">
+
+  <!-- ANUNCIO IZQUIERDO -->
+  <script>
+  atOptions = {
+    'key' : '1d2e8be2f2826e4f68ceda6fe5b4e8a8',
+    'format' : 'iframe',
+    'height' : 600,
+    'width' : 160,
+    'params' : {}
+  };
+  </script>
+  <script src="https://www.highperformanceformat.com/1d2e8be2f2826e4f68ceda6fe5b4e8a8/invoke.js"></script>
+
+  <!-- CONTENIDO CENTRAL -->
+  <main class="juego-container fade-up">
+    <div id="detalle"></div>
+  </main>
+
+<!-- ANUNCIO DERECHO (NATIVE) -->
+<aside class="sidebar-ad right">
+  <div class="native-ad">
+    <script async="async" data-cfasync="false" src="https://pl28702894.effectivegatecpm.com/e9b88537b08a4fa8771bee4ed59e98c7/invoke.js"></script>
+    <div id="container-e9b88537b08a4fa8771bee4ed59e98c7"></div>
+  </div>
+</aside>
+
 </div>
 
 <script src="js/data.js"></script>
+
 <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = Number(params.get("id"));
+const params = new URLSearchParams(window.location.search);
+const id = Number(params.get("id"));
+const juego = juegos.find(j => j.id === id);
 
-    const juego = juegos.find(j => j.id === id);
+if (juego) {
+  document.getElementById("detalle").innerHTML = `
+    <div class="section-box hidden">
+      <h1>${juego.nombre}</h1>
+      <img src="${juego.imagen}" class="portada">
+      <p>${juego.descripcionLarga}</p>
+    </div>
 
-    if (juego) {
-        document.getElementById("detalle").innerHTML = `
-            <div class="section-box hidden">
-              <h1>${juego.nombre}</h1>
-              <img src="${juego.imagen}" class="portada">
-              <p>${juego.descripcionLarga}</p>
-            </div>
+    <div class="section-box hidden">
+      <h3>Descargar</h3>
+      <a class="boton descarga-btn" href="${juego.descarga}" target="_blank">
+        Links de descarga
+      </a>
+    </div>
 
-            <div class="section-box hidden">
-              <h3>Descargar</h3>
+    <div class="section-box hidden">
+      <h3>Requisitos mínimos</h3>
+      <ul>
+        ${juego.requisitos?.minimo.map(r => `<li>${r}</li>`).join("")}
+      </ul>
 
-              <div class="ad-banner">
-              <div id="container-e9b88537b08a4fa8771bee4ed59e98c7"></div>
-              </div>
+      ${juego.requisitos?.recomendado ? `
+        <h3>Requisitos recomendados</h3>
+        <ul>
+          ${juego.requisitos.recomendado.map(r => `<li>${r}</li>`).join("")}
+        </ul>
+      ` : ""}
+    </div>
 
+    <div class="section-box hidden">
+      <h4>Contenido</h4>
+      <div class="contenido">${juego.contenido}</div>
+    </div>
 
-              <a class="boton descarga-btn" href="${juego.descarga}" target="_blank">
-                Links de descarga
-              </a>
-            </div>
-
-            <div class="section-box hidden">
-              <h3>Requisitos mínimos</h3>
-              <ul>
-                ${juego.requisitos?.minimo.map(r => `<li>${r}</li>`).join("")}
-              </ul>
-
-              ${juego.requisitos?.recomendado ? `
-                <h3>Requisitos recomendados</h3>
-                <ul>
-                  ${juego.requisitos.recomendado.map(r => `<li>${r}</li>`).join("")}
-                </ul>
-              ` : ""}
-            </div>
-
-            <div class="section-box hidden">
-              <h4>Contenido</h4>
-              <div class="contenido">
-                ${juego.contenido}
-              </div>
-            </div>
-
-            <div class="section-box hidden">
-              <h3>Tutoriales</h3>
-              ${
-                juego.tutoriales.length > 0
-                  ? `<ul>
-                      ${juego.tutoriales.map(t => `
-                        <li>
-                          <a href="${t.link}" target="_blank">${t.titulo}</a>
-                        </li>
-                      `).join("")}
-                    </ul>`
-                  : `<p>No hay tutoriales disponibles.</p>`
-              }
-            </div>
-        `;
-    } else {
-        document.getElementById("detalle").innerHTML = `
-            <h2>Juego no encontrado</h2>
-            <a href="index.html">Volver al catálogo</a>
-        `;
-    }
+    <div class="section-box hidden">
+      <h3>Tutoriales</h3>
+      ${
+        juego.tutoriales.length
+          ? `<ul>${juego.tutoriales.map(t => `
+              <li><a href="${t.link}" target="_blank">${t.titulo}</a></li>
+            `).join("")}</ul>`
+          : `<p>No hay tutoriales disponibles.</p>`
+      }
+    </div>
+  `;
+} else {
+  document.getElementById("detalle").innerHTML = `
+    <h2>Juego no encontrado</h2>
+    <a href="index.html">Volver al catálogo</a>
+  `;
+}
 </script>
 
 <script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("show");
   });
-
-  document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+});
+document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
 </script>
 
 </body>
