@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juegos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>CATÁLOGO DE JUEGOS</h1>
+    <input type="text" id="buscador" placeholder="Buscar juego...">
+</header>
+
+<main id="catalogo" class="catalogo"></main>
+
+<script src="js/data.js"></script>
+<script>
+const catalogo = document.getElementById("catalogo");
+const buscador = document.getElementById("buscador");
+
+function mostrarJuegos(filtro = "") {
+    const juegosFiltrados = juegos.filter(j =>
+        j.nombre.toLowerCase().includes(filtro.toLowerCase())
+    );
+
+    catalogo.innerHTML = "";
+
+    if (juegosFiltrados.length === 0) {
+        catalogo.innerHTML = `
+            <div class="no-resultados">
+                <h2>Juego no encontrado 😕</h2>
+            </div>
+        `;
+        return;
+    }
+
+    juegosFiltrados.forEach(juego => {
+        catalogo.innerHTML += `
+            <div class="card hidden">
+                <img src="${juego.imagen}">
+                <h2>${juego.nombre}</h2>
+                <p>${juego.descripcion}</p>
+                <a href="juego.html?id=${juego.id}" class="boton">
+                    Ver más
+                </a>
+            </div>
+        `;
+    });
+
+    observarCards();
+}
+
+function observarCards() {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    });
+
+    document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+}
+
+buscador.addEventListener("input", e => {
+    mostrarJuegos(e.target.value);
+});
+
+mostrarJuegos();
+</script>
+
+
+</body>
+</html>

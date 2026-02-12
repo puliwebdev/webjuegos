@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="index.html" class="volver">← Volver</a>
+
+<div class="juego-container fade-up">
+  <div id="detalle"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const id = Number(params.get("id"));
+
+    const juego = juegos.find(j => j.id === id);
+
+    if (juego) {
+        document.getElementById("detalle").innerHTML = `
+            <div class="section-box hidden">
+              <h1>${juego.nombre}</h1>
+              <img src="${juego.imagen}" class="portada">
+              <p>${juego.descripcionLarga}</p>
+            </div>
+
+            <div class="section-box hidden">
+              <h3>Descargar</h3>
+              <a class="boton" href="${juego.descarga}" target="_blank">
+                Links de descarga
+              </a>
+            </div>
+
+            <div class="section-box hidden">
+              <h3>Requisitos mínimos</h3>
+              <ul>
+                ${juego.requisitos?.minimo.map(r => `<li>${r}</li>`).join("")}
+              </ul>
+
+              ${juego.requisitos?.recomendado ? `
+                <h3>Requisitos recomendados</h3>
+                <ul>
+                  ${juego.requisitos.recomendado.map(r => `<li>${r}</li>`).join("")}
+                </ul>
+              ` : ""}
+            </div>
+
+            <div class="section-box hidden">
+              <h4>Contenido</h4>
+              <div class="contenido">
+                ${juego.contenido}
+              </div>
+            </div>
+
+            <div class="section-box hidden">
+              <h3>Tutoriales</h3>
+              ${
+                juego.tutoriales.length > 0
+                  ? `<ul>
+                      ${juego.tutoriales.map(t => `
+                        <li>
+                          <a href="${t.link}" target="_blank">${t.titulo}</a>
+                        </li>
+                      `).join("")}
+                    </ul>`
+                  : `<p>No hay tutoriales disponibles.</p>`
+              }
+            </div>
+        `;
+    } else {
+        document.getElementById("detalle").innerHTML = `
+            <h2>Juego no encontrado</h2>
+            <a href="index.html">Volver al catálogo</a>
+        `;
+    }
+</script>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
