@@ -89,7 +89,7 @@ if (juego) {
     </div>
 
     <div class="section-box hidden">
-      <h3>Tutoriales</h3>
+      <h3>${juego.tituloTutoriales || "Tutoriales"}</h3>
       ${
         juego.tutoriales.length
           ? `<ul>${juego.tutoriales.map(t => `
