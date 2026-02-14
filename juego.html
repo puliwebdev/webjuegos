@@ -5,6 +5,16 @@
   <title>Juego</title>
   <link rel="stylesheet" href="css/style.css">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descarga juegos para PC gratis en PuliWeb.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PuliWeb Juegos PC">
+  <meta property="og:description" content="Descarga juegos para PC gratis con requisitos y tutoriales.">
+  <meta property="og:image" content="https://puliwebdev.github.io/webjuegos/img/logo.png">
+  <meta property="og:url" content="">
+
 </head>
 
 <body>
@@ -51,10 +61,30 @@
 
 <script>
 const params = new URLSearchParams(window.location.search);
-const id = Number(params.get("id"));
-const juego = juegos.find(j => j.id === id);
+const slug = params.get("slug");
+const juego = juegos.find(j => j.slug === slug);
+
 
 if (juego) {
+
+  document.title = juego.nombre + " | PuliWeb Juegos PC";
+
+  // Open Graph dinámico
+document.querySelector("meta[property='og:title']").setAttribute("content", juego.nombre + " | PuliWeb");
+document.querySelector("meta[property='og:description']").setAttribute("content", juego.descripcionLarga.substring(0, 150));
+document.querySelector("meta[property='og:image']").setAttribute("content", juego.imagen);
+document.querySelector("meta[property='og:url']").setAttribute("content", window.location.href);
+
+
+  let meta = document.querySelector("meta[name='description']");
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.name = "description";
+    document.head.appendChild(meta);
+  }
+  meta.content = juego.descripcionLarga.substring(0, 150);
+
+
   document.getElementById("detalle").innerHTML = `
     <div class="section-box hidden">
       <h1>${juego.nombre}</h1>
@@ -125,8 +155,9 @@ document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
 <script>
 var disqus_config = function () {
   this.page.url = window.location.href;
-  this.page.identifier = "juego-" + id;
+  this.page.identifier = juego.slug;
 };
+
 
 (function() {
   var d = document, s = d.createElement('script');

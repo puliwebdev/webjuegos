@@ -1,9 +1,10 @@
 const juegos = [
     {
         id: 1,
+        slug: "resident-evil-4",
         nombre: "Resident Evil 4",
         descripcion: "terror, Supervivencia, accion",
-        descripcionLarga: "Descargar Resident Evil 4 Remake para PC en Español.",
+        descripcionLarga: "Descargar Resident Evil 4 Remake para PC + DLC Separate Ways en Español.",
         imagen: "https://image.api.playstation.com/vulcan/ap/rnd/202210/0712/BiS5QP6h4506JHyJlZlVzK9D.jpg",
         descarga: "https://exe.io/re4re",
         requisitos: {
@@ -52,6 +53,7 @@ const juegos = [
     },
     {
         id: 2,
+        slug: "silent-hill-2-remake",
         nombre: "SILENT HILL 2 REMAKE",
         descripcion: "Terror psicologico, Supervivencia",
         descripcionLarga: "«Me llamo... Maria», dice la mujer, sonriendo. Su rostro, su voz... Es igual que ella.",
@@ -104,6 +106,7 @@ const juegos = [
     },
     {
         id: 3,
+        slug: "the-last-of-us-parte-II",
         nombre: "The Last of Us™ Parte II",
         descripcion: "supervivencia, post apocaliptico",
         descripcionLarga: "Descargar The Last of US Part II Remastered para PC en Español.",
@@ -144,6 +147,7 @@ const juegos = [
     },
         {
         id: 4,
+        slug: "the-last-of-us-parte-I",
         nombre: "The Last of Us™ Parte I",
         descripcion: "supervivencia, post apocaliptico",
         descripcionLarga: "Descargar The Last of US Part I Remastered para PC en Español.",
@@ -186,6 +190,7 @@ const juegos = [
     },
     {
         id: 5,
+        slug: "resident-evil-village",
         nombre: "Resident Evil Village",
         descripcion: "supervivencia, terror, accion",
         descripcionLarga: "Descargar Resident Evil 8 Village para PC en Español",
@@ -226,6 +231,7 @@ const juegos = [
     },
         {
         id: 6,
+        slug: "rust-online",
         nombre: "RUST + FIX ONLINE",
         descripcion: "supervivencia, mundo abierto",
         descripcionLarga: "Descargar Rust para PC v2617 + ONLINE CON SERVIDORES",
@@ -271,6 +277,7 @@ const juegos = [
     },
         {
         id: 7,
+        slug: "peak-pc-online",
         nombre: "PEAK PC v1.53a ONLINE STEAM",
         descripcion: "",
         descripcionLarga: "Descargar PEAK para PC v1.53a ONLINE STEAM ",

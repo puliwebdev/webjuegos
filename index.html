@@ -2,9 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Juegos</title>
+    <title>PuliWeb Juegos PC</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descarga juegos para PC gratis. Requisitos mínimos, tutoriales y enlaces actualizados en PuliWeb.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PuliWeb - Juegos PC">
+    <meta property="og:description" content="Descarga juegos para PC gratis con requisitos y tutoriales.">
+    <meta property="og:image" content="https://puliwebdev.github.io/webjuegos/img/logo.png">
+
+    </head>
 <body>
 
 <header class="header">
@@ -58,7 +66,7 @@ function mostrarJuegos(filtro = "") {
                 <img src="${juego.imagen}">
                 <h2>${juego.nombre}</h2>
                 <p>${juego.descripcion}</p>
-                <a href="juego.html?id=${juego.id}" class="boton">
+                <a href="juego.html?slug=${juego.slug}" class="boton">
                     Ver más
                 </a>
             </div>

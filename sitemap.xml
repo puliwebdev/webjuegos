@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/juego.html?slug=resident-evil-4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/juego.html?slug=silent-hill-2-remake</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/juego.html?slug=the-last-of-us-parte-ii</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/juego.html?slug=the-last-of-us-parte-i</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/juego.html?slug=resident-evil-village</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/juego.html?slug=rust-online</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://puliwebdev.github.io/webjuegos/juego.html?slug=peak-pc-online</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
