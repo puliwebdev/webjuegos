@@ -1279,6 +1279,99 @@ const juegos = [
         }
     ]
 },
+{
+    id: 36,
+    slug: "raft",
+    nombre: "Raft",
+    descripcion: "supervivencia, aventura, mundo abierto, cooperativo",
+    descripcionLarga: "Raft es un juego de supervivencia en alta mar donde deberás recolectar recursos, construir y expandir tu balsa, explorar islas y defenderte de tiburones solo o en modo cooperativo con amigos.",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/648800/capsule_616x353.jpg",
+    descarga: "https://exe.io/38m5k6",
+    requisitos: {
+        minimo: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 7 o superior",
+            "PROCESADOR: Intel Core i5 2.6GHz o similar",
+            "MEMORIA: 6 GB de RAM",
+            "GRÁFICOS: GeForce GTX 700 series o similar",
+            "DirectX: Versión 11",
+            "Red: Conexión a Internet de banda ancha",
+            "Almacenamiento: 10 GB disponibles"
+        ],
+        recomendado: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 7 o superior",
+            "PROCESADOR: Intel Core i5-6600 3.3GHz o similar",
+            "MEMORIA: 8 GB de RAM",
+            "GRÁFICOS: GeForce GTX 1050 series o similar",
+            "DirectX: Versión 11",
+            "Red: Conexión a Internet de banda ancha",
+            "Almacenamiento: 10 GB disponibles"
+        ]
+    },
+    contenido: `
+    Raft The Final Chapter v1.1.07
+    • Supervivencia en océano abierto  
+    • Construcción y expansión de tu balsa  
+    • Multijugador cooperativo  
+    • Exploración de islas y arrecifes  
+    • Defensa contra tiburones y peligros marinos
+    `,
+    tutoriales: [
+        {
+            titulo: "COMO INSTALAR Y JUGAR ONLINE",
+            link: "https://exe.io/38m5k6"
+        }
+    ]
+},
+{
+    id: 37,
+    slug: "hytale",
+    nombre: "Hytale + FIX ONLINE / LAN + MOD ESPAÑOL",
+    descripcion: "HYTALE PC v28012026 + FIX ONLINE / LAN + MOD ESPAÑOL",
+    descripcionLarga: "Hytale es un juego sandbox lleno de creatividad y aventura en un mundo generado proceduralmente, con exploración, combates, construcción, herramientas para creación de contenido y soporte para modding.",
+    imagen: "https://i.ytimg.com/vi/o77MzDQT1cg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDww2YhPLy9_jhhtmlgkFZ6A5Q8OQ",
+    descarga: "https://exe.io/z6Ca2Hp",
+    requisitos: {
+        minimo: [
+            "SO: Windows 10 64-bit (version 1809) o Windows 11 (también disponible para macOS y Linux) ",
+            "PROCESADOR: Intel Core i5-7500 o AMD Ryzen 3 1200 (o equivalente) ",
+            "MEMORIA: 8 GB de RAM ",
+            "GRÁFICOS: Intel UHD Graphics 620 / AMD Radeon Vega 6 / NVIDIA GTX 900 Series (o equivalente) ",
+            "ALMACENAMIENTO: SSD con 10 GB de espacio disponible "
+        ],
+        recomendado: [
+            "SO: Windows 10/11 64-bit ",
+            "PROCESADOR: Intel Core i5-10400 o AMD Ryzen 5 3600 (o equivalente) ",
+            "MEMORIA: 16 GB de RAM ",
+            "GRÁFICOS: Intel Iris Xe / AMD Radeon 660M / NVIDIA GTX 900 Series (o equivalente) ",
+            "ALMACENAMIENTO: SSD con 20 GB de espacio disponible "
+        ]
+    },
+    contenido: `
+    HYTALE Juego para PC v28012026
+    - Mundo sandbox procedural con biomas, criaturas y mazmorras  
+    - Herramientas creativas para construir y modificar contenidos  
+    - Modding y scripting integrados  
+    - Exploración y combate en mundos generados  
+    - Soporte multijugador
+    `,
+    tutoriales: [
+        {
+            titulo: "Cómo instalar",
+            link: "https://exe.io/z6Ca2Hp"
+        },
+        {
+        titulo: "VIDEO TUTORIAL 1 Cómo JUGAR ONLINE LAN",
+        link: "https://drive.google.com/file/d/17PZ6b8FJqunr35sH7VAUaor1DmWJ_Et4/view?usp=sharing"
+        },
+        {
+        titulo: "TUTORIAL 2, SI NO ENTENDISTE EL PRIMER TUTORIAL MIRA ESTE",
+        link: "https://drive.google.com/file/d/14Z8IC3kWUoiBKU7M6shnk2t4sPjuyRqq/view?usp=sharing"
+        }
+    ]
+},
+
 
 
 
