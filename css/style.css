@@ -27,7 +27,7 @@ a:hover {
 
 /* HEADER */
 header {
-  background: #171d25;
+  background: linear-gradient(to bottom, #1b2838, #141c25);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -314,3 +314,50 @@ header h1 {
   position: sticky;
   top: 110px;
 }
+
+.hero-catalogo {
+  position: relative;
+  text-align: center;
+  padding: 35px 0 25px 0;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(
+    to bottom,
+    #111a24 0%,
+    #0f1720 60%,
+    transparent 100%
+  );
+
+}
+
+.hero-subtitulo {
+  font-size: 22px;
+  color: #e4f0ff;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-shadow: 0 0 12px rgba(102,192,244,0.3);
+}
+
+.hero-descripcion {
+  font-size: 14px;
+  color: #9db2c9;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.hero-catalogo::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 250px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(102,192,244,0.18) 0%,
+    rgba(0,0,0,0) 70%
+  );
+  pointer-events: none;
+}
+
