@@ -1371,6 +1371,42 @@ const juegos = [
         }
     ]
 },
+{
+    id: 38,
+    slug: "reanimal",
+    nombre: "REANIMAL",
+    descripcion: "terror, aventura, cooperativo, puzzle, supervivencia",
+    descripcionLarga: "REANIMAL es un juego de terror y aventura cooperativa desarrollado por Tarsier Studios. Los jugadores controlan a dos hermanos que deben escapar de una isla infernal llena de criaturas grotescas y pesadillas vivientes, resolviendo puzzles y sobreviviendo juntos en un mundo oscuro y perturbador.",
+    imagen: "https://reanimal.thqnordic.com/game-sites/reanimal/editions/standard-edition.png",
+    descarga: "https://exe.io/89wUjO",
+    requisitos: {
+        minimo: [
+            "SO: Windows 10 64-bit",
+            "PROCESADOR: Intel Core i5-8400 o AMD Ryzen 5 2600",
+            "MEMORIA: 8 GB de RAM",
+            "GRÁFICOS: NVIDIA GTX 1060 6GB o AMD RX 580",
+            "DIRECTX: Versión 12",
+            "ALMACENAMIENTO: 30 GB de espacio disponible"
+        ],
+        recomendado: [
+            "SO: Windows 11 64-bit",
+            "PROCESADOR: Intel Core i7-9700K o AMD Ryzen 7 3700X",
+            "MEMORIA: 16 GB de RAM",
+            "GRÁFICOS: NVIDIA RTX 2060 o AMD RX 6600",
+            "DIRECTX: Versión 12",
+            "ALMACENAMIENTO: SSD con 30 GB de espacio disponible"
+        ]
+    },
+    contenido: `
+        REANIMAL Juego para PC en Español v354342 (13.02.2026); included DLC: Foxhead and Muttonhead Masks. 
+    `,
+    tutoriales: [
+        {
+            titulo: "Cómo instalar",
+            link: "https://exe.io/89wUjO"
+        },
+    ]
+}
 
 
 
