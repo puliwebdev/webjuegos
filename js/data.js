@@ -1406,9 +1406,50 @@ const juegos = [
             link: "https://exe.io/89wUjO"
         },
     ]
-}
-
-
+},
+{
+    id: 39,
+    slug: "roadside-research",
+    nombre: "Roadside Research",
+    descripcion: "simulacion, casual, cooperativo",
+    descripcionLarga: "Roadside Research es un simulador cooperativo de gestión donde tú y hasta tres amigos dirigís una estación de servicio alienígena encubierta, combinando tareas cotidianas con investigación secreta en un entorno dinámico.",
+    imagen: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3643170/ac02b254bf7dcbdd06907c2e4eddad6a2d9e4327/header.jpg?t=1770983015",
+    descarga: "",
+    requisitos: {
+        minimo: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 10 o Windows 11",
+            "PROCESADOR: AMD Ryzen 3 2200G / Intel i5-7400",
+            "MEMORIA: 8 GB de RAM",
+            "GRÁFICOS: AMD RX 570 / NVIDIA GTX 1060",
+            "DIRECTX: Versión 11",
+            "ALMACENAMIENTO: 6 GB disponibles"
+        ],
+        recomendado: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 10 o Windows 11",
+            "PROCESADOR: AMD Ryzen 7 2700X / Intel i7-9700K",
+            "MEMORIA: 8 GB de RAM",
+            "GRÁFICOS: AMD RX 5600 XT / NVIDIA 2060",
+            "DIRECTX: Versión 11",
+            "ALMACENAMIENTO: 8 GB disponibles"
+        ]
+    },
+    contenido: `
+    Roadside Research incluye:
+    - Modo cooperativo para hasta 4 jugadores  
+    - Gestión de estación de servicio con tareas diarias  
+    - Investigación alienígena encubierta  
+    - Mecánicas de simulación y expansión de operaciones  
+    - Ambientación casual con elementos narrativos
+    `,
+    tutoriales: [
+        {
+            titulo: "como instalar",
+            link: ""
+        },
+    ]
+},
 
 
 ];
