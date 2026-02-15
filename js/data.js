@@ -1153,9 +1153,132 @@ const juegos = [
         }
     ]
 },
-
-
-
+{
+    id: 33,
+    slug: "Mewgenics",
+    nombre: "Mew-Genics",
+    descripcion: "rol, roguelike, gatos",
+    descripcionLarga: "Cría gatos para crear el ejército felino definitivo y envíalos a desafiantes aventuras. Elige habilidades, reúne objetos y manipula la genética de las generaciones en este juego roguelite estratégico por turnos de los creadores de «The Binding of Isaac» y «The End is Nigh».",
+    imagen: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/686060/aa8075d11165fef4d4d0d09c156f0da0623b5da1/header.jpg?t=1771102269",
+    descarga: "https://exe.io/8WeMNv0H",
+    requisitos: {
+        minimo: [
+        "Requiere un procesador y un sistema operativo de 64 bits",
+        "SO: Windows 10 64-bit",
+        "PROCESADOR: 4 núcleos, desde 2014 o posterior",
+        "MEMORIA: 8 GB de RAM",
+        "GRÁFICOS: 2GB VRAM, OpenGL 4.4 o posterior",
+        "ALMACENAMIENTO: 6 GB de espacio disponible",
+        "NOTAS ADICIONALES: El juego puede funcionar en sistemas con especificaciones inferiores, pero la resolución y la tasa de fotogramas se verán afectadas.",
+        ],
+        recomendado: [
+        "Requiere un procesador y un sistema operativo de 64 bits",
+        ]
+    },
+    contenido: `
+    MEWGENICS Juego para PC en Español
+    Update v1.0.20645 (Se descarga e instala por separado)
+    Mew-Genics incluye:
+    - Sistema de cría y mezcla de gatos con atributos únicos
+    - Eventos y encuentros generados aleatoriamente
+    - Modos de captura de foto y colección
+    - Humor y narrativa ligera integrada
+    `,
+    tutoriales: [
+        {
+            titulo: "como instalar",
+            link: "https://exe.io/8WeMNv0H"
+        }
+    ]
+},
+{
+    id: 34,
+    slug: "hollow-knight-silksong ONLINE STEAM",
+    nombre: "Hollow Knight: Silksong",
+    descripcion: "accion, aventura, metroidvania, plataformas",
+    descripcionLarga: "Hollow Knight: Silksong es la esperada secuela del aclamado metroidvania Hollow Knight, donde exploras el misterioso reino de Pharloom con Hornet, enfrentando hordas de enemigos y desafiantes jefes mientras descubres secretos antiguos.",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/1030300/capsule_616x353.jpg",
+    descarga: "https://exe.io/en4TCgfM",
+    requisitos: {
+        minimo: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 10 versión 21H1 (build 19043) o superior",
+            "PROCESADOR: Intel Core i3-3240 / AMD FX-4300",
+            "MEMORIA: 4 GB de RAM",
+            "GRÁFICOS: NVIDIA GeForce GTX 560 Ti (1GB) / Radeon HD 7750 (1GB)",
+            "DIRECTX: Versión 10",
+            "ALMACENAMIENTO: 8 GB disponibles"
+        ],
+        recomendado: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 10 versión 21H1 (build 19043) o superior",
+            "PROCESADOR: Intel Core i5-3470",
+            "MEMORIA: 8 GB de RAM",
+            "GRÁFICOS: NVIDIA GeForce GTX 1050 (2GB) / Radeon R9 380 (2GB)",
+            "DIRECTX: Versión 10",
+            "ALMACENAMIENTO: 8 GB disponibles"
+        ]
+    },
+    contenido: `
+    Descargar Hollow Knight Silksong Juego para PC en Español v1.0.28324 (04.09.2025)
+    Update v1.0.29242 (Se descarga e instala por separado)
+    Hollow Knight: Silksong incluye:
+    - Nuevo reino exploratorio: Pharloom  
+    - Combate fluido y desafiante  
+    - Más de 200 enemigos únicos  
+    - Boss fights memorables  
+    - Modo Steel Soul para desafío extra
+    `,
+    tutoriales: [
+        {
+            titulo: "COMO INSTALAR Y JUGAR ONLINE",
+            link: "https://exe.io/en4TCgfM"
+        }
+    ]
+},
+{
+    id: 35,
+    slug: "hollow-knight",
+    nombre: "Hollow Knight",
+    descripcion: "accion, aventura, metroidvania, plataformas",
+    descripcionLarga: "Hollow Knight es un galardonado metroidvania en 2D con un mundo oscuro y profundo, lleno de criaturas extrañas, una historia envolvente y exploración sin fin a través de cavernas y ciudades olvidadas.",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/367520/capsule_616x353.jpg",
+    descarga: "https://exe.io/XbrYRY40",
+    requisitos: {
+        minimo: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 10 versión 21H1 o superior",
+            "PROCESADOR: Intel Core i3-3240 / AMD FX-4300",
+            "MEMORIA: 4 GB de RAM",
+            "GRÁFICOS: NVIDIA GeForce GTX 560 Ti (1GB) / AMD Radeon HD 7750 (1GB)",
+            "DIRECTX: Versión 10",
+            "ALMACENAMIENTO: 9 GB disponibles"
+        ],
+        recomendado: [
+            "Requiere un procesador y un sistema operativo de 64 bits",
+            "SO: Windows 10 versión 21H1 o superior",
+            "PROCESADOR: Intel Core i5-3470",
+            "MEMORIA: 8 GB de RAM",
+            "GRÁFICOS: NVIDIA GeForce GTX 1050 (2GB) / AMD Radeon R9 380 (2GB)",
+            "DIRECTX: Versión 10",
+            "ALMACENAMIENTO: 9 GB disponibles"
+        ]
+    },
+    contenido: `
+    Hollow Knight Juego para PC en Español v1.5.78 (21.10.2021); included DLC: Gods & Nightmares, Soundtrack (FLAC).
+    Hollow Knight incluye:
+    - Mundo interconectado para explorar
+    - Combate desafiante contra criaturas únicas
+    - Jefes épicos y áreas secretas
+    - Banda sonora atmosférica
+    `,
+    tutoriales: [
+        {
+            titulo: "COMO INSTALAR",
+            link: "https://exe.io/XbrYRY40"
+        }
+    ]
+},
 
 
 
