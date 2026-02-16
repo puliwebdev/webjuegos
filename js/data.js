@@ -1414,7 +1414,7 @@ const juegos = [
     descripcion: "simulacion, casual, cooperativo",
     descripcionLarga: "Roadside Research es un simulador cooperativo de gestión donde tú y hasta tres amigos dirigís una estación de servicio alienígena encubierta, combinando tareas cotidianas con investigación secreta en un entorno dinámico.",
     imagen: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3643170/ac02b254bf7dcbdd06907c2e4eddad6a2d9e4327/header.jpg?t=1770983015",
-    descarga: "",
+    descarga: "https://exe.io/E18H5",
     requisitos: {
         minimo: [
             "Requiere un procesador y un sistema operativo de 64 bits",
@@ -1437,7 +1437,6 @@ const juegos = [
     },
     contenido: `
     Roadside Research incluye:
-    - Modo cooperativo para hasta 4 jugadores  
     - Gestión de estación de servicio con tareas diarias  
     - Investigación alienígena encubierta  
     - Mecánicas de simulación y expansión de operaciones  
@@ -1445,9 +1444,14 @@ const juegos = [
     `,
     tutoriales: [
         {
-            titulo: "como instalar",
-            link: ""
+            titulo: "link de descarga",
+            link: "https://exe.io/E18H5"
         },
+        {
+
+            titulo:"video tutorial como instalar",
+            link:"https://www.youtube.com/watch?v=m-YJy-ZwHrk",
+        }
     ]
 },
 
